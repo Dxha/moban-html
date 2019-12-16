@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	デフォルトスタイル
+------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	font-size: 1em;	
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+a, a:link {
+	color: #040404;
+	text-decoration: none;
+}
+a:visited {
+	color: #040404;
+}
+a:hover {
+	color: #040404;
+}
+a:active {
+	color: #040404;
+}
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	min-width: 1280px;
+	color: #000;
+	font-size: 1.3rem;
+	font-family: "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", MS PGothic, "sans-serif";
+	line-height: 1.5;
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	background-color: #FFF;
+}
+#container {
+	text-align: left;
+}
+#main {
+}
+
+@media all and (max-width: 767px) {
+	body {
+		min-width: inherit;
+		font-size: 1.2rem;
+	}
+}
+a[href^="tel:"] {
+	cursor: default;
+	pointer-events: none;
+}
+
+@media all and (min-width: 768px) {
+	.sp {
+		display: none !important;
+	}
+}
+
+@media all and (max-width: 767px) {
+	a:hover,  a:hover img {
+		opacity: 1 !important;
+	}
+	.pc {
+		display: none !important;
+	}
+	a[href^="tel:"] {
+		cursor: pointer;
+		pointer-events: auto;
+	}
+}
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+#gHeader {
+	background: #CCC;
+}
+
+@media all and (max-width: 767px) {
+	#gHeader {
+	}
+}
+/*------------------------------------------------------------
+	gNavi
+------------------------------------------------------------*/
+#gNavi {
+}
+#gNavi li {
+}
+
+@media all and (max-width: 767px) {
+}
+/*------------------------------------------------------------
+	パンクズリスト
+------------------------------------------------------------*/
+#pagePath {
+}
+#pagePath li {
+	display: inline;
+	color: #000;
+	font-size: 1.2em;
+}
+#pagePath a {
+}
+
+@media all and (max-width: 767px) {
+}
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+#gFooter {
+}
+
+@media all and (max-width: 767px) {
+}
