@@ -1,9 +1,6 @@
 @charset "utf-8";
 /*------------------------------------------------------------
-	トップページ
+	index
 ------------------------------------------------------------*/
-@media all and (min-width: 768px) and (max-width: 1024px) {
-}
-
-@media all and (max-width: 767px) {
+@media all and (max-width: 896px) {
 }

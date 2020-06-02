@@ -21,7 +21,7 @@ $(function(){
 
 $(window).on('load',function(){
 	var localLink = window.location+'';
-	if(localLink.indexOf("#") != -1){
+	if(localLink.indexOf("#") != -1 && localLink.slice(-1) != '#'){	
 		localLink = localLink.slice(localLink.indexOf("#")+1);
 		$('html,body').animate({scrollTop: $('#'+localLink).offset().top}, 500);
 	}

@@ -1,31 +1,22 @@
 @charset "utf-8";
 /*------------------------------------------------------------
-	clearfix
+	汎用スタイル
 ------------------------------------------------------------*/
-* html .clearfix {
-		zoom: 1;
-	}
-
-	*+html .clearfix {
-		zoom: 1;
-	}
-
-.clearfix:after {
-	height: 0;
-	visibility: hidden;
-	content: ".";
-	display: block;
-	clear: both;
-}
-
+/* clearfix */	
+* html .clearfix {zoom: 1;}
+*+html .clearfix {zoom: 1;}
+.clearfix:after {height: 0;visibility: hidden;content: ".";display: block;clear: both;}
+/* flex */	
+.flex,.flexA,.flexB,.flexC {display: flex;flex-wrap: wrap;}
+.flexA {justify-content: space-around;}
+.flexB {justify-content: space-between;}
+.flexC {justify-content: center;}
 /*------------------------------------------------------------
 	リンク・インプットをタップ時のクラス
 ------------------------------------------------------------*/
-a.tapCtrl, input.tapCtrl,
-.tapCtrl a, .tapCtrl input {
+a.tapCtrl, input.tapCtrl,.tapCtrl a, .tapCtrl input {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
 /*------------------------------------------------------------
 	common
 ------------------------------------------------------------*/

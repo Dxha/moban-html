@@ -2,22 +2,15 @@
 /*------------------------------------------------------------
 	汎用スタイル
 ------------------------------------------------------------*/
-	* html .clearfix {
-		zoom: 1;
-	}
-
-	*+html .clearfix {
-		zoom: 1;
-	}
-
-.clearfix:after {
-	height: 0;
-	visibility: hidden;
-	content: ".";
-	display: block;
-	clear: both;
-}
-
+/* clearfix */	
+* html .clearfix {zoom: 1;}
+*+html .clearfix {zoom: 1;}
+.clearfix:after {height: 0;visibility: hidden;content: ".";display: block;clear: both;}
+/* flex */	
+.flex,.flexA,.flexB,.flexC {display: flex;flex-wrap: wrap;}
+.flexA {justify-content: space-around;}
+.flexB {justify-content: space-between;}
+.flexC {justify-content: center;}
 /*------------------------------------------------------------
 	common
 ------------------------------------------------------------*/

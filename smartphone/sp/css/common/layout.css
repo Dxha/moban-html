@@ -2,17 +2,22 @@
 /*------------------------------------------------------------
 	デフォルトスタイル
 ------------------------------------------------------------*/
-* {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
 	padding: 0;
-	background: transparent;
 	border: 0;
 	outline: 0;
 	font-size: 1em;
-	box-sizing: border-box;
 }
 html {
 	font-size: 62.5%;
+}
+body, table, input, textarea, select, option {
+	font-family: HiraKakuProN-W3;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
 }
 ol, ul {
 	list-style: none;
@@ -23,13 +28,19 @@ blockquote, q {
 :focus {
 	outline: 0;
 }
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
 img {
 	vertical-align: top;
 	max-width: 100%;
 	height: auto;
 }
 a {
-	color: #040404;
+	color: #000;
 	text-decoration: none;
 }
 /*------------------------------------------------------------
@@ -38,7 +49,6 @@ a {
 body {
 	color: #000;
 	font-size: 1.2rem;
-	font-family: HiraKakuProN-W3;
 	line-height: 1.2;
 	text-align: center;
 	background-color: #FFF;
@@ -46,7 +56,7 @@ body {
 	-webkit-text-size-adjust: none;
 }
 #container {
-	text-align: left;
+	text-align: left;	
 }
 /*------------------------------------------------------------
 	ヘッダー

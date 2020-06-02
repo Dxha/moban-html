@@ -2,17 +2,22 @@
 /*------------------------------------------------------------
 	デフォルトスタイル
 ------------------------------------------------------------*/
-* {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
 	padding: 0;
 	background: transparent;
 	border: 0;
 	outline: 0;
-	font-size: 1em;	
-	box-sizing: border-box;
+	font-size: 1em;
 }
 html {
 	font-size: 62.5%;
+}
+body, table, input, textarea, select, option {
+	font-family: "メイリオ", Meiryo, Osaka,"ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro," ＭＳ Ｐゴシック", MS PGothic," sans-serif";
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
 }
 ol, ul {
 	list-style: none;
@@ -23,22 +28,29 @@ blockquote, q {
 :focus {
 	outline: 0;
 }
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
 img {
 	vertical-align: top;
 	max-width: 100%;
 }
-a, a:link {
-	color: #040404;
+a,
+a:link {
+	color: #000;
 	text-decoration: none;
 }
 a:visited {
-	color: #040404;
+	color: #000;
 }
 a:hover {
-	color: #040404;
+	color: #000;
 }
 a:active {
-	color: #040404;
+	color: #000;
 }
 /*------------------------------------------------------------
 	レイアウト
@@ -47,7 +59,6 @@ body {
 	min-width: 1280px;
 	color: #000;
 	font-size: 1.3rem;
-	font-family: "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", MS PGothic, "sans-serif";
 	line-height: 1.5;
 	text-size-adjust: none;
 	-webkit-text-size-adjust: none;
@@ -58,26 +69,22 @@ body {
 }
 #main {
 }
-
-@media all and (max-width: 767px) {
-	body {
-		min-width: inherit;
-		font-size: 1.2rem;
-	}
-}
 a[href^="tel:"] {
 	cursor: default;
 	pointer-events: none;
 }
-
-@media all and (min-width: 768px) {
+@media all and (min-width: 897px) {
 	.sp {
 		display: none !important;
 	}
 }
-
-@media all and (max-width: 767px) {
-	a:hover,  a:hover img {
+@media all and (max-width: 896px) {
+	body {
+		min-width: inherit;
+		font-size: 1.2rem;
+	}
+	a:hover,
+	a:hover img {
 		opacity: 1 !important;
 	}
 	.pc {
@@ -94,8 +101,7 @@ a[href^="tel:"] {
 #gHeader {
 	background: #CCC;
 }
-
-@media all and (max-width: 767px) {
+@media all and (max-width: 896px) {
 	#gHeader {
 	}
 }
@@ -106,8 +112,7 @@ a[href^="tel:"] {
 }
 #gNavi li {
 }
-
-@media all and (max-width: 767px) {
+@media all and (max-width: 896px) {
 }
 /*------------------------------------------------------------
 	パンクズリスト
@@ -117,18 +122,16 @@ a[href^="tel:"] {
 #pagePath li {
 	display: inline;
 	color: #000;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 }
 #pagePath a {
 }
-
-@media all and (max-width: 767px) {
+@media all and (max-width: 896px) {
 }
 /*------------------------------------------------------------
 	フッター
 ------------------------------------------------------------*/
 #gFooter {
 }
-
-@media all and (max-width: 767px) {
+@media all and (max-width: 896px) {
 }
